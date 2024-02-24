@@ -10,11 +10,11 @@ public class ItemUserInteraction : MonoBehaviour, IInteractable
     {
         if (Inventory.Instance.HasItemByData(neededItem))
         {
-            UIController.Instance.SetText("Unlocked the fucking cube");
+            UIController.Instance.SetDescriptionText("Unlocked the fucking cube");
         }
         else
         {
-            UIController.Instance.SetText("You don't have the fucking key");
+            UIController.Instance.SetDescriptionText("You don't have the fucking key");
         }
     }
 }

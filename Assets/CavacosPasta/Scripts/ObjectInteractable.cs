@@ -9,7 +9,7 @@ public class ObjectInteractable : MonoBehaviour, IInteractable
     
     public void Interact()
     {
-        UIController.Instance.SetText(textToDisplay);
+        UIController.Instance.SetDescriptionText(textToDisplay);
     }
     
 }
