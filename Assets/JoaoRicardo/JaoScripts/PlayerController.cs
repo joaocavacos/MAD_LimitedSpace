@@ -6,9 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement")]
-    private float moveSpeed;
-    public float walkSpeed;
-    public float runSpeed;
+    public float moveSpeed;
 
     public float groundDrag;
 
@@ -38,7 +36,6 @@ public class PlayerController : MonoBehaviour
         
         MyInput();
         SpeedControl();
-        Sprint();
 
         rb.drag = groundDrag;
     }
@@ -71,18 +68,6 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 limitVel = flatVel.normalized * moveSpeed;
             rb.velocity = new Vector3(limitVel.x, rb.velocity.y, limitVel.z);
-        }
-    }
-
-    private void Sprint()
-    {
-        if (Input.GetKey(sprint))
-        {
-            moveSpeed = runSpeed;
-        }
-        else
-        {
-            moveSpeed = walkSpeed;
         }
     }
 }
