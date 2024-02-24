@@ -231,6 +231,8 @@ MonoBehaviour:
   sensX: 400
   sensY: 400
   orientation: {fileID: 1023778342}
+  cameraZoomSpeed: 2500
+  minZoomAmount: 30
 --- !u!1 &540029298
 GameObject:
   m_ObjectHideFlags: 0
