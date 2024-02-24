@@ -496,7 +496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2b75486b2fb564b92a485334647a2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToDisplay: What is the meaning of this?
+  textToDisplay: Someone left a note on the wall.
 --- !u!1 &529643009740719658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,7 +1275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: bb272523b6fcced4ab319edefa96d7ed, type: 2}
-  displayText: The door plate fell, strange...
+  displayText: Snap, that scared me.
   isInspectable: 0
   itemPrefab: {fileID: 0}
   OnItemInspect:
@@ -3109,7 +3109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 5fc7c1a4f5aeb3c4da870602cedadb81, type: 2}
-  displayText: What is this doing here?
+  displayText: Strange, a flashlight on the floor?
   isInspectable: 1
   itemPrefab: {fileID: 933999272741123218, guid: 60f8ead20b0c28244940551327e65da8, type: 3}
   OnItemInspect:
