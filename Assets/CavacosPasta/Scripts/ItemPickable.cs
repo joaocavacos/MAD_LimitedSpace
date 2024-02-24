@@ -19,6 +19,7 @@ public class ItemPickable : MonoBehaviour, IInteractable
     private GameObject itemGO;
     private Vector3 inspectCamPos = new Vector3(1000,1000,1000);
     public UnityEvent OnItemInspect;
+    public UnityEvent OnItemPickUnityEvent;
 
     public void Interact()
     {
@@ -26,6 +27,7 @@ public class ItemPickable : MonoBehaviour, IInteractable
         UIController.Instance.SetDescriptionText(displayText, 5f);
         UIController.Instance.ChangeCrosshair("Open", false);
         OnItemPicked?.Invoke(itemData);
+        OnItemPickUnityEvent?.Invoke();
         
         if (isInspectable)
         {
