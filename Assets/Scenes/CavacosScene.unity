@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 228871331}
   - component: {fileID: 228871330}
   m_Layer: 0
-  m_Name: TestPickable (1)
+  m_Name: FlashlightPickable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -393,8 +393,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29893d065a3a3da4e9e3f5f0303bdace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: f7e76a61a74285246aafb435945cebe4, type: 2}
-  displayText: It's a fucking cube
+  itemData: {fileID: 11400000, guid: 5fc7c1a4f5aeb3c4da870602cedadb81, type: 2}
+  displayText: I should take it with me.
   isInspectable: 1
   itemPrefab: {fileID: 7366581899215161313, guid: 7cb2639817fffd14c94f1e33f7c3e964, type: 3}
   OnItemInspect:
@@ -423,6 +423,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1051483460}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!65 &228871331
 BoxCollider:
@@ -1168,7 +1180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1051483461
 Transform:
   m_ObjectHideFlags: 0
@@ -1258,6 +1270,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3ab0c02cd993094e81d207e3974f239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1213575026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1213575027}
+  - component: {fileID: 1213575028}
+  m_Layer: 0
+  m_Name: GameDirector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1213575027
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213575026}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1213575028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213575026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dbdcca70f5152c48b203732fe75f2a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canPlay: 1
 --- !u!1 &1289353912
 GameObject:
   m_ObjectHideFlags: 0
@@ -2351,14 +2408,15 @@ SceneRoots:
   - {fileID: 1313818548}
   - {fileID: 561526320}
   - {fileID: 1439507917}
+  - {fileID: 1213575027}
+  - {fileID: 819948145}
   - {fileID: 1291771887}
   - {fileID: 1592094665}
   - {fileID: 851836590}
+  - {fileID: 1669054157}
   - {fileID: 7192027133798559278}
   - {fileID: 228871334}
   - {fileID: 148280670}
   - {fileID: 193965487}
   - {fileID: 1338552701}
-  - {fileID: 1669054157}
-  - {fileID: 819948145}
   - {fileID: 1536986821}

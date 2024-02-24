@@ -23,6 +23,7 @@ public class ObjectInspector : StaticInstance<ObjectInspector>, IDragHandler
     public void CloseInspect()
     {
         OnInspectClose?.Invoke();
+        GameDirector.Instance.ChangeGameState(true);
         Cursor.lockState = CursorLockMode.Locked;
         Destroy(inspectGO);
     }

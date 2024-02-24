@@ -29,6 +29,7 @@ public class ItemPickable : MonoBehaviour, IInteractable
         if (isInspectable)
         {
             Inspect();
+            GameDirector.Instance.ChangeGameState(false);
         }
         
         Destroy(gameObject);
