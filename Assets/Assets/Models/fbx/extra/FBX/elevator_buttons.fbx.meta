@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d303e107c95b8a64ca4798361c5af182
+guid: f1a7d6e8de14ddd4482ee8a0ab1cfe3d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: hallway_assets
-    second: {fileID: 2100000, guid: 51ca1b814c3a5fa4b9e8d31f13cbae6b, type: 2}
+      name: extra_assets
+    second: {fileID: 2100000, guid: 4bddc1b47822d504490a835f2d99c68d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
