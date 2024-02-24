@@ -11,6 +11,11 @@ public class ElevatorDoorManager : MonoBehaviour
         elevAnim.SetBool("isNear", true);
     }
 
+    public void OpenElevator()
+    {
+        elevAnim.SetBool("isNear", true);
+    }
+
     private void OnTriggerExit(Collider other)
     {
         elevAnim.SetBool("isNear", false);
