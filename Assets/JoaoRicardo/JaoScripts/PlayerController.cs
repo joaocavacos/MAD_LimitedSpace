@@ -45,6 +45,8 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!GameDirector.Instance.canPlay) return;
+        
         MovePlayer();
     }
 

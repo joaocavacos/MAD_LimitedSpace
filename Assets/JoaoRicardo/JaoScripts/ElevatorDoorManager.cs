@@ -8,17 +8,17 @@ public class ElevatorDoorManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        elevAnim.SetBool("isNear", true);
-    }
-
-    public void OpenElevator()
-    {
-        elevAnim.SetBool("isNear", true);
+        OpenElevator();
     }
 
     private void OnTriggerExit(Collider other)
     {
         elevAnim.SetBool("isNear", false);
+    }
+    
+    public void OpenElevator()
+    {
+        elevAnim.SetBool("isNear", true);
     }
 
 }
