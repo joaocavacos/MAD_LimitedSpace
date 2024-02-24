@@ -9,7 +9,7 @@ public class PlayerInteractor : MonoBehaviour
     
     private void Update()
     {
-        if (_interactable != null )
+        if (_interactable != null)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -20,7 +20,6 @@ public class PlayerInteractor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entering trigger");
         if (other.TryGetComponent(out IInteractable newInteractable))
         {
             _interactable = newInteractable;
