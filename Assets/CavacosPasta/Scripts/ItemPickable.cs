@@ -11,7 +11,7 @@ public class ItemPickable : MonoBehaviour, IInteractable
     public static event HandleItemPicked OnItemPicked;
 
     public ItemData itemData;
-    //public string Name => itemData.itemName;
+    public string Name => itemData.itemName;
     public string displayText;
     [Header("Inspect Properties")]
     public bool isInspectable = false;
@@ -22,7 +22,7 @@ public class ItemPickable : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        UIController.Instance.SetText(displayText, 2f);
+        UIController.Instance.SetText(Name + "\n" + displayText, 5f);
         UIController.Instance.ChangeCrosshair("Open", false);
         OnItemPicked?.Invoke(itemData);
         
