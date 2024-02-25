@@ -56,6 +56,13 @@ public class Inventory : Singleton<Inventory>
 
     public bool HasItemByData(ItemData data)
     {
-        return inventory.Select(item => item.itemData == data).FirstOrDefault();
+        var hasData = false;
+        
+        foreach (var item in inventory.Where(item => item.itemData == data))
+        {
+            hasData = true;
+        }
+
+        return hasData;
     }
 }

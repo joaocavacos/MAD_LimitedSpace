@@ -11,7 +11,7 @@ public class PlayerInteractor : MonoBehaviour
     {
         if (_interactable != null)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && GameDirector.Instance.canPlay)
             {
                 _interactable.Interact();
             }

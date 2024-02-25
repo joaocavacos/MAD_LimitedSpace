@@ -6,6 +6,8 @@ public class FlashlightController : MonoBehaviour
 {
     private Light _light;
     private bool isOn;
+
+    public AudioClip flashlightSFX;
     
     void Start()
     {
@@ -25,5 +27,6 @@ public class FlashlightController : MonoBehaviour
     {
         isOn = !isOn;
         _light.enabled = isOn;
+        SoundManager.Instance.PlayAudio(flashlightSFX);
     }
 }
