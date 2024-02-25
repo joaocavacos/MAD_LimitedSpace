@@ -11,6 +11,8 @@ public class TriggerEvent : MonoBehaviour
     public AudioClip audioClip;
     [Header("If you want to trigger a text insert it here")]
     public string triggerText;
+
+    public float messageDuration = 2f;
     
     private void OnTriggerEnter(Collider other)
     {
@@ -25,6 +27,6 @@ public class TriggerEvent : MonoBehaviour
 
     public void ShowText()
     {
-        UIController.Instance.SetDescriptionText(triggerText, 2f);
+        UIController.Instance.SetDescriptionText(triggerText, messageDuration);
     }
 }
