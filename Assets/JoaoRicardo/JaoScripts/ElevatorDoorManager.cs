@@ -5,6 +5,7 @@ using UnityEngine;
 public class ElevatorDoorManager : MonoBehaviour
 {
     public Animator elevAnim;
+    public AudioClip ding;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,6 +19,7 @@ public class ElevatorDoorManager : MonoBehaviour
     
     public void OpenElevator()
     {
+        SoundManager.Instance.PlayAudio(ding);
         elevAnim.SetBool("isNear", true);
     }
 
