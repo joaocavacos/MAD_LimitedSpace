@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
 
     public Transform orient;
 
+    private AudioSource steps;
+
     float hInput;
     float vInput;
 
@@ -27,6 +29,8 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+
+        steps = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -58,6 +62,18 @@ public class PlayerController : MonoBehaviour
         moveDirection = orient.forward * vInput + orient.right * hInput;
 
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+
+        print(moveDirection.magnitude);
+
+        if(moveDirection.magnitude > 0)
+        {
+            steps.pitch = Random.Range(0.5f, 1.5f);
+            steps.Play();
+        }
+        else
+        {
+            steps.Stop();
+        }
     }
 
     private void SpeedControl()
