@@ -2818,11 +2818,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747598494}
   m_Mesh: {fileID: 3728458557968378145, guid: 9d7323b7ba963a84aa0ecde770873719, type: 3}
---- !u!108 &759058143 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 2161996773227260861, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
-  m_PrefabInstance: {fileID: 1454038407}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &765480108
 GameObject:
   m_ObjectHideFlags: 0
@@ -6180,37 +6175,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1636397949}
     - target: {fileID: 93240578627682775, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
-      propertyPath: OnElevatorStop.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 93240578627682775, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
-      propertyPath: OnElevatorStop.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 93240578627682775, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: OnElevatorStop.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1508022980}
-    - target: {fileID: 93240578627682775, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
-      propertyPath: OnElevatorStop.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 93240578627682775, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
-      propertyPath: OnElevatorStop.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_enabled
-      objectReference: {fileID: 0}
-    - target: {fileID: 93240578627682775, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
-      propertyPath: OnElevatorStop.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.Behaviour, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 93240578627682775, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
-      propertyPath: OnElevatorStop.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 93240578627682775, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
-      propertyPath: OnElevatorStop.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 683633097876367094, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6230,18 +6197,6 @@ PrefabInstance:
     - target: {fileID: 1779336186320626097, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: m_Name
       value: Map_Prefabs
-      objectReference: {fileID: 0}
-    - target: {fileID: 3947757030395307741, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
-      propertyPath: OnElevatorEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3947757030395307741, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
-      propertyPath: OnElevatorEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 759058143}
-    - target: {fileID: 3947757030395307741, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
-      propertyPath: OnElevatorEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_enabled
       objectReference: {fileID: 0}
     - target: {fileID: 4198619956962457201, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8848,10 +8803,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 342261166755853091, guid: 9bf08d9e1d1204640b02f860bf604bad, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5346297072706072745, guid: 9bf08d9e1d1204640b02f860bf604bad, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.71
