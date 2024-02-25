@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.13471615, g: 0.14837316, b: 0.16128165, a: 1}
+  m_IndirectSpecularColor: {r: 0.13513187, g: 0.14836773, b: 0.1614475, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3145,6 +3145,7 @@ MonoBehaviour:
   nextFloor: {fileID: 1636397949}
   previousFloor: {fileID: 1383811371}
   elevatorAnim: {fileID: 572242566}
+  elevator: {fileID: 0}
   OnElevatorEnter:
     m_PersistentCalls:
       m_Calls:
@@ -6246,6 +6247,10 @@ PrefabInstance:
       propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1597138696}
+    - target: {fileID: 7590585663279049939, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: displayText
+      value: What is a fuel doing on the floor?
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
