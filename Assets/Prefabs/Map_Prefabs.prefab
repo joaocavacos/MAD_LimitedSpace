@@ -1060,7 +1060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55dfba2a3e735b840b334e4dcb4507ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextFloor: {fileID: 7374226462108436740}
+  nextFloor: {fileID: 0}
   previousFloor: {fileID: 450626611997458175}
   elevatorAnim: {fileID: 2982457734282958988}
   elevator: {fileID: 0}
@@ -1082,7 +1082,7 @@ MonoBehaviour:
   OnElevatorStop:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4625410316234768350}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -1213,6 +1213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: Someone left a note on the door.
+  paper: {fileID: 8300000, guid: 0ed95d211f9db33439f35d5258be837b, type: 3}
   OnEndofInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -2906,6 +2907,7 @@ Transform:
   - {fileID: 9012018322602734432}
   - {fileID: 2278328112808938455}
   - {fileID: 1121871536992534122}
+  - {fileID: 667305152025337042}
   m_Father: {fileID: 9179295233548112361}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6723166952896697945
@@ -3150,6 +3152,7 @@ Transform:
   - {fileID: 3884644519032963618}
   - {fileID: 3128935170021806952}
   - {fileID: 2568840990152498317}
+  - {fileID: 6016740411243418230}
   - {fileID: 2031720946743500703}
   - {fileID: 8964795363897875733}
   - {fileID: 4916853557403747973}
@@ -8892,7 +8895,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  audioClip: {fileID: 8300000, guid: ae98ca6e7b520744d9c249351c5e93e6, type: 3}
+  audioClip: {fileID: 8300000, guid: 4944a4613c7e2bd4e9af2a22543d88a2, type: 3}
   triggerText: WTF WAS THAT? Guess I should put that fuse to use
   messageDuration: 4
 --- !u!1 &2533542121747494462
@@ -11366,6 +11369,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  fuse: {fileID: 0}
 --- !u!1 &3149223372801565149
 GameObject:
   m_ObjectHideFlags: 0
@@ -12551,7 +12555,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0.0057708505, y: -0.00000011907761, z: -0.00000047656573}
+  m_Center: {x: 0.0057708505, y: -0.25, z: -0.00000047656573}
 --- !u!114 &7277892415820096698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12564,6 +12568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29893d065a3a3da4e9e3f5f0303bdace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUp: {fileID: 8300000, guid: 823a2bd49f4abf141864ad258d64a5dc, type: 3}
   itemData: {fileID: 11400000, guid: bb272523b6fcced4ab319edefa96d7ed, type: 2}
   displayText: The door plate fell, strange...
   isInspectable: 1
@@ -12860,6 +12865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29893d065a3a3da4e9e3f5f0303bdace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUp: {fileID: 8300000, guid: 823a2bd49f4abf141864ad258d64a5dc, type: 3}
   itemData: {fileID: 11400000, guid: 5fc7c1a4f5aeb3c4da870602cedadb81, type: 2}
   displayText: Strange, a flashlight on the floor?
   isInspectable: 1
@@ -19996,6 +20002,134 @@ Transform:
   - {fileID: 3275041981314608976}
   m_Father: {fileID: 7305773228282583604}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &5777119143617111079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 667305152025337042}
+  - component: {fileID: 4343677900162308794}
+  m_Layer: 0
+  m_Name: MonsterSoud
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &667305152025337042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5777119143617111079}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1656798390765736167}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &4343677900162308794
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5777119143617111079}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: aa46ddcfb21dba447b8492b32508309d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &5780656194348474171
 GameObject:
   m_ObjectHideFlags: 0
@@ -22960,6 +23094,73 @@ MonoBehaviour:
   audioClip: {fileID: 0}
   triggerText: 
   messageDuration: 2
+--- !u!1 &6916995232245250550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6016740411243418230}
+  - component: {fileID: 784706557996748055}
+  - component: {fileID: 6273039473448607199}
+  m_Layer: 0
+  m_Name: NumberFallingTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6016740411243418230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6916995232245250550}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.48, y: 1, z: -5.54}
+  m_LocalScale: {x: 1.6266669, y: 2.1851015, z: 2.4038885}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6659701748119760181}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &784706557996748055
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6916995232245250550}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6273039473448607199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6916995232245250550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2934fb4613e538a4490dd140ae831d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number: {fileID: 8300000, guid: c92ff960666b7ee4c8e97abde3d88d5c, type: 3}
 --- !u!1 &6923776061070623363
 GameObject:
   m_ObjectHideFlags: 0
@@ -23305,7 +23506,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  audioClip: {fileID: 8300000, guid: 46552889af19a8a4299fde3f83ee9981, type: 3}
+  audioClip: {fileID: 8300000, guid: ae98ca6e7b520744d9c249351c5e93e6, type: 3}
   triggerText: My battery is dead...
   messageDuration: 2
 --- !u!1 &6979482571442097713
@@ -29043,6 +29244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: What is the meaning of this?
+  paper: {fileID: 8300000, guid: 0ed95d211f9db33439f35d5258be837b, type: 3}
   OnEndofInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -30756,6 +30958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: Everything is working well...
+  paper: {fileID: 0}
   OnEndofInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -31592,6 +31795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: The box is full of fuses and everything is working well...
+  paper: {fileID: 0}
   OnEndofInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -32166,6 +32370,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  fuse: {fileID: 0}
 --- !u!1001 &5300532136627443276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32267,6 +32472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29893d065a3a3da4e9e3f5f0303bdace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUp: {fileID: 8300000, guid: 823a2bd49f4abf141864ad258d64a5dc, type: 3}
   itemData: {fileID: 11400000, guid: 47faf0998c4ca954aa8860f02a231645, type: 2}
   displayText: What is a fuel doing on the floor?
   isInspectable: 0
@@ -33308,6 +33514,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  fuse: {fileID: 0}
 --- !u!1001 &7264245485823034806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33489,6 +33696,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  fuse: {fileID: 0}
 --- !u!1001 &7294143601288311770
 PrefabInstance:
   m_ObjectHideFlags: 0
