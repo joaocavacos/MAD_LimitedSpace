@@ -6,9 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement")]
-    private float moveSpeed;
-    public float walkSpeed;
-    public float runSpeed;
+    public float moveSpeed;
 
     public float groundDrag;
 
@@ -16,6 +14,8 @@ public class PlayerController : MonoBehaviour
     public KeyCode sprint = KeyCode.LeftShift;
 
     public Transform orient;
+
+    public AudioSource steps;
 
     float hInput;
     float vInput;
@@ -38,13 +38,15 @@ public class PlayerController : MonoBehaviour
         
         MyInput();
         SpeedControl();
-        Sprint();
+        PlayFootsteps();
 
         rb.drag = groundDrag;
     }
 
     private void FixedUpdate()
     {
+        if (!GameDirector.Instance.canPlay) return;
+        
         MovePlayer();
     }
 
@@ -59,6 +61,8 @@ public class PlayerController : MonoBehaviour
         moveDirection = orient.forward * vInput + orient.right * hInput;
 
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+
+        
     }
 
     private void SpeedControl()
@@ -72,15 +76,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Sprint()
+    private void PlayFootsteps()
     {
-        if (Input.GetKey(sprint))
+        if (moveDirection.magnitude > 0 && GameDirector.Instance.canPlay)
         {
-            moveSpeed = runSpeed;
+            steps.enabled = true;
         }
         else
         {
-            moveSpeed = walkSpeed;
+            steps.enabled = false;
         }
     }
 }

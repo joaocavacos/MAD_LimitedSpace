@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class FlashlightOff : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject lantern;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        lantern.SetActive(false);
     }
 }
