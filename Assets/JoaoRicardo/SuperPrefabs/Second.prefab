@@ -960,6 +960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elevAnim: {fileID: 6681782306299689504}
+  ding: {fileID: 8300000, guid: f7618ddf148dd384bbeff1080c598c24, type: 3}
 --- !u!1 &4567207607395160912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,6 +1726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elevAnim: {fileID: 1999884230532911751}
+  ding: {fileID: 8300000, guid: f7618ddf148dd384bbeff1080c598c24, type: 3}
 --- !u!1 &7282215857781091608
 GameObject:
   m_ObjectHideFlags: 0

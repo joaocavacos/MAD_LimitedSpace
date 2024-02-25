@@ -423,6 +423,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextFloor: {fileID: 0}
   previousFloor: {fileID: 870201533912580296}
+  elevatorAnim: {fileID: 0}
+  elevator: {fileID: 0}
+  OnElevatorEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnElevatorStop:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &605516835690927823
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,6 +588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elevAnim: {fileID: 4807783308446986420}
+  ding: {fileID: 8300000, guid: f7618ddf148dd384bbeff1080c598c24, type: 3}
 --- !u!1 &1605398629790945876
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,6 +847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elevAnim: {fileID: 9223090561428392161}
+  ding: {fileID: 8300000, guid: f7618ddf148dd384bbeff1080c598c24, type: 3}
 --- !u!1 &2208351509488412747
 GameObject:
   m_ObjectHideFlags: 0
