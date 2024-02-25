@@ -9,9 +9,11 @@ public class GameDirector : Singleton<GameDirector>
 
     public void ChangeGameState(bool state) => canPlay = state;
 
+    public void ChangeTimeScale(float scale) => Time.timeScale = scale;
+
     public void EndGame()
     {
         Cursor.lockState = CursorLockMode.None;
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("EndingScene");
     }
 }
