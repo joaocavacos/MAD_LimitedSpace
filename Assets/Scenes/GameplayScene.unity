@@ -1518,18 +1518,6 @@ MonoBehaviour:
   OnTriggerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 765480109}
-        m_TargetAssemblyTypeName: ElevatorDoorManager, Assembly-CSharp
-        m_MethodName: OpenElevator
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1097886200}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -1556,6 +1544,7 @@ MonoBehaviour:
         m_CallState: 2
   audioClip: {fileID: 0}
   triggerText: I have to get out of here!
+  messageDuration: 2
 --- !u!65 &393631352
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4269,6 +4258,90 @@ Transform:
   - {fileID: 1738788184}
   m_Father: {fileID: 178617532}
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!1 &1093044051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1093044052}
+  - component: {fileID: 1093044054}
+  - component: {fileID: 1093044053}
+  m_Layer: 0
+  m_Name: TriggerEnding
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1093044052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093044051}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3.55}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1383811372}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1093044053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093044051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c04a9918299e8c4091e22e48c40c417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTriggerEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1597138700}
+        m_TargetAssemblyTypeName: FadeController, Assembly-CSharp
+        m_MethodName: FadeOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  audioClip: {fileID: 0}
+  triggerText: 
+  messageDuration: 0
+--- !u!65 &1093044054
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093044051}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 5, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1097886200
 GameObject:
   m_ObjectHideFlags: 0
@@ -5752,6 +5825,7 @@ Transform:
   - {fileID: 178617532}
   - {fileID: 1412992787}
   - {fileID: 393631353}
+  - {fileID: 1093044052}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1407323639
@@ -6204,10 +6278,13 @@ PrefabInstance:
       propertyPath: OnElevatorStop.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1508022980}
+<<<<<<< Updated upstream
     - target: {fileID: 474977708671346280, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+=======
+>>>>>>> Stashed changes
     - target: {fileID: 683633097876367094, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6305,14 +6382,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: f7618ddf148dd384bbeff1080c598c24, type: 3}
     - target: {fileID: 7277892415820096698, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
-      propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7277892415820096698, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
-      propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7277892415820096698, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1113857852}
@@ -6320,6 +6389,7 @@ PrefabInstance:
       propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1597138696}
+<<<<<<< Updated upstream
     - target: {fileID: 7277892415820096698, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -6373,6 +6443,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6659701748119760181, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       insertIndex: 4
       addedObject: {fileID: 2021604413}
+=======
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+>>>>>>> Stashed changes
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
 --- !u!4 &1454038408 stripped
@@ -6950,6 +7025,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1597138700 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4894371753053224927, guid: 7d38fb7f473a1b348bc75b8a5c7e6e69, type: 3}
+  m_PrefabInstance: {fileID: 1597138695}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c1478ed959b245ab32262b11556af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1621928328
@@ -8939,11 +9025,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069383156}
   m_Mesh: {fileID: 5779197439840542771, guid: d303e107c95b8a64ca4798361c5af182, type: 3}
---- !u!1 &2075477931 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 474977708671346280, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
-  m_PrefabInstance: {fileID: 1454038407}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2122745770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8962,7 +9043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5346297072706072745, guid: 9bf08d9e1d1204640b02f860bf604bad, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 34.6
+      value: -65.59
       objectReference: {fileID: 0}
     - target: {fileID: 5346297072706072745, guid: 9bf08d9e1d1204640b02f860bf604bad, type: 3}
       propertyPath: m_LocalRotation.w
