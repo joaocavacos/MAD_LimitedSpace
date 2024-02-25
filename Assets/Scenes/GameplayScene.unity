@@ -1081,6 +1081,10 @@ PrefabInstance:
       propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1151536968}
+    - target: {fileID: 998638319993819728, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: m_Name
+      value: Third
+      objectReference: {fileID: 0}
     - target: {fileID: 1779336186320626097, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: m_Name
       value: Map_Prefabs
