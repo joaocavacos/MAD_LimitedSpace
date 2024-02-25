@@ -5579,6 +5579,9 @@ Transform:
   - {fileID: 6659701748119760181}
   - {fileID: 8875744000999555481}
   - {fileID: 9179295233548112361}
+  - {fileID: 7007237738241921248}
+  - {fileID: 3232239564551036944}
+  - {fileID: 5752020019638126834}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1823459863101448536
@@ -7063,7 +7066,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   audioClip: {fileID: 0}
-  triggerText: I have to know where this missing plate is from, the number was 205
+  triggerText: I have to know where this missing plate is from. The number was 205.
 --- !u!1 &2430665125047586690
 GameObject:
   m_ObjectHideFlags: 0
@@ -10746,7 +10749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 5fc7c1a4f5aeb3c4da870602cedadb81, type: 2}
-  displayText: What is this doing here?
+  displayText: Strange, a flashlight on the floor?
   isInspectable: 1
   itemPrefab: {fileID: 933999272741123218, guid: 60f8ead20b0c28244940551327e65da8, type: 3}
   OnItemInspect:
@@ -23711,7 +23714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2b75486b2fb564b92a485334647a2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToDisplay: The box is full of fuses and everything is working well...
+  textToDisplay: Everything is working well...
   OnEndofInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -24092,6 +24095,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1279949619622419477, guid: 5a35d1185f27bee48871cd10ad070433, type: 3}
   m_PrefabInstance: {fileID: 1800169951409286820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2740270312265526783
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4198619956962457201}
+    m_Modifications:
+    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7630134216844990021, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
+      propertyPath: m_Name
+      value: map_v6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
+--- !u!4 &3232239564551036944 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
+  m_PrefabInstance: {fileID: 2740270312265526783}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3367762200339831293
 PrefabInstance:
@@ -24723,7 +24788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 47faf0998c4ca954aa8860f02a231645, type: 2}
-  displayText: Maybe I can use this
+  displayText: Here It Is.
   isInspectable: 0
   itemPrefab: {fileID: 0}
   OnItemInspect:
@@ -25175,6 +25240,72 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1279949619622419477, guid: 5a35d1185f27bee48871cd10ad070433, type: 3}
   m_PrefabInstance: {fileID: 6363501614393741580}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6563455300018901939
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4198619956962457201}
+    m_Modifications:
+    - target: {fileID: 4190782293454291795, guid: edf05380c508f3b4fb87c23dbcf12c72, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190782293454291795, guid: edf05380c508f3b4fb87c23dbcf12c72, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190782293454291795, guid: edf05380c508f3b4fb87c23dbcf12c72, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190782293454291795, guid: edf05380c508f3b4fb87c23dbcf12c72, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190782293454291795, guid: edf05380c508f3b4fb87c23dbcf12c72, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190782293454291795, guid: edf05380c508f3b4fb87c23dbcf12c72, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190782293454291795, guid: edf05380c508f3b4fb87c23dbcf12c72, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190782293454291795, guid: edf05380c508f3b4fb87c23dbcf12c72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190782293454291795, guid: edf05380c508f3b4fb87c23dbcf12c72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190782293454291795, guid: edf05380c508f3b4fb87c23dbcf12c72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899635107765703516, guid: edf05380c508f3b4fb87c23dbcf12c72, type: 3}
+      propertyPath: m_Name
+      value: map_v3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313195627526113890, guid: edf05380c508f3b4fb87c23dbcf12c72, type: 3}
+      propertyPath: displayText
+      value: Snap! That scared me.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: edf05380c508f3b4fb87c23dbcf12c72, type: 3}
+--- !u!4 &7007237738241921248 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4190782293454291795, guid: edf05380c508f3b4fb87c23dbcf12c72, type: 3}
+  m_PrefabInstance: {fileID: 6563455300018901939}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6954136770208054559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25447,7 +25578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neededItem: {fileID: 11400000, guid: 47faf0998c4ca954aa8860f02a231645, type: 2}
   UnlockMessage: Finally...
-  LockedMessage: I need a fuse...
+  LockedMessage: '* Sigh * Stupid apartmant... Now I have to find a fuse.'
   OnItemUnlock:
     m_PersistentCalls:
       m_Calls:
@@ -27142,4 +27273,66 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1279949619622419477, guid: 5a35d1185f27bee48871cd10ad070433, type: 3}
   m_PrefabInstance: {fileID: 8778637563902720565}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8989664563893663210
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4198619956962457201}
+    m_Modifications:
+    - target: {fileID: 3680272065681374488, guid: 6516f6855a5a1a441bbd21d3047d9c02, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680272065681374488, guid: 6516f6855a5a1a441bbd21d3047d9c02, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680272065681374488, guid: 6516f6855a5a1a441bbd21d3047d9c02, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680272065681374488, guid: 6516f6855a5a1a441bbd21d3047d9c02, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680272065681374488, guid: 6516f6855a5a1a441bbd21d3047d9c02, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680272065681374488, guid: 6516f6855a5a1a441bbd21d3047d9c02, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680272065681374488, guid: 6516f6855a5a1a441bbd21d3047d9c02, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680272065681374488, guid: 6516f6855a5a1a441bbd21d3047d9c02, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680272065681374488, guid: 6516f6855a5a1a441bbd21d3047d9c02, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680272065681374488, guid: 6516f6855a5a1a441bbd21d3047d9c02, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5272633936273207942, guid: 6516f6855a5a1a441bbd21d3047d9c02, type: 3}
+      propertyPath: m_Name
+      value: map_v1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6516f6855a5a1a441bbd21d3047d9c02, type: 3}
+--- !u!4 &5752020019638126834 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3680272065681374488, guid: 6516f6855a5a1a441bbd21d3047d9c02, type: 3}
+  m_PrefabInstance: {fileID: 8989664563893663210}
   m_PrefabAsset: {fileID: 0}
