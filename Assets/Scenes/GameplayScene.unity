@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.13513187, g: 0.14836773, b: 0.1614475, a: 1}
+  m_IndirectSpecularColor: {r: 0.13471615, g: 0.14837316, b: 0.16128165, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6252,7 +6252,10 @@ PrefabInstance:
       value: What is a fuel doing on the floor?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3885934588886222700, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+    - {fileID: 5756950456559205306, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+    - {fileID: 1794987890269241583, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
@@ -8444,67 +8447,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938308796}
   m_Mesh: {fileID: 3728458557968378145, guid: 9d7323b7ba963a84aa0ecde770873719, type: 3}
---- !u!1001 &1961417901
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 782603337658109423, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7630134216844990021, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
-      propertyPath: m_Name
-      value: map_v6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7630134216844990021, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0cccc681ea278f046a77dee60c015db0, type: 3}
 --- !u!1 &1971372929
 GameObject:
   m_ObjectHideFlags: 0
@@ -8810,7 +8752,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5346297072706072745, guid: 9bf08d9e1d1204640b02f860bf604bad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.71
+      value: -2.934
       objectReference: {fileID: 0}
     - target: {fileID: 5346297072706072745, guid: 9bf08d9e1d1204640b02f860bf604bad, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8874,7 +8816,6 @@ SceneRoots:
   - {fileID: 1037266007}
   - {fileID: 1199439991}
   - {fileID: 1536986821}
-  - {fileID: 1961417901}
   - {fileID: 1383811372}
   - {fileID: 1454038407}
   - {fileID: 685692559}
