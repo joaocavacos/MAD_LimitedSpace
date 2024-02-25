@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
     public Transform orient;
 
-    private AudioSource steps;
+    public AudioSource steps;
 
     float hInput;
     float vInput;
@@ -29,8 +29,6 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-
-        steps = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -40,6 +38,7 @@ public class PlayerController : MonoBehaviour
         
         MyInput();
         SpeedControl();
+        PlayFootsteps();
 
         rb.drag = groundDrag;
     }
@@ -63,17 +62,7 @@ public class PlayerController : MonoBehaviour
 
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
 
-        print(moveDirection.magnitude);
-
-        if(moveDirection.magnitude > 0)
-        {
-            steps.pitch = Random.Range(0.5f, 1.5f);
-            steps.Play();
-        }
-        else
-        {
-            steps.Stop();
-        }
+        
     }
 
     private void SpeedControl()
@@ -84,6 +73,18 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 limitVel = flatVel.normalized * moveSpeed;
             rb.velocity = new Vector3(limitVel.x, rb.velocity.y, limitVel.z);
+        }
+    }
+
+    private void PlayFootsteps()
+    {
+        if (moveDirection.magnitude > 0)
+        {
+            steps.enabled = true;
+        }
+        else
+        {
+            steps.enabled = false;
         }
     }
 }
