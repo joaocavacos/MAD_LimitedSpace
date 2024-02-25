@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
 
     private void PlayFootsteps()
     {
-        if (moveDirection.magnitude > 0)
+        if (moveDirection.magnitude > 0 && GameDirector.Instance.canPlay)
         {
             steps.enabled = true;
         }
