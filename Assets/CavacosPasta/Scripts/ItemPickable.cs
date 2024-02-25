@@ -45,6 +45,7 @@ public class ItemPickable : MonoBehaviour, IInteractable
     {
         OnItemInspect?.Invoke();
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         itemGO = Instantiate(itemPrefab, inspectCamPos, Quaternion.identity);
         ObjectInspector.Instance.SetGameObjectInspect(itemGO);
     }
