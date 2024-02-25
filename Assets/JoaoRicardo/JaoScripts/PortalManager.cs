@@ -9,11 +9,12 @@ public class PortalManager : MonoBehaviour
     public GameObject previousFloor;
     public Animator elevatorAnim;
 
-    private Quaternion rot = Quaternion.Euler(0f, 180f, 0f);
+    public AudioClip elevator;
 
     public UnityEvent OnElevatorEnter;
     public UnityEvent OnElevatorStop;
-    
+
+
     private void OnTriggerEnter(Collider other)
     {
         StartCoroutine(ElevatorCoroutine(other));
@@ -24,6 +25,7 @@ public class PortalManager : MonoBehaviour
     {
         GameDirector.Instance.ChangeGameState(false);
         elevatorAnim.SetBool("isNear", false);
+        SoundManager.Instance.PlayAudio(elevator);
         yield return new WaitForSeconds(2f);
         OnElevatorEnter?.Invoke();
         yield return new WaitForSeconds(0.1f);
