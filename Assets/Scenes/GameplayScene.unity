@@ -1556,6 +1556,7 @@ MonoBehaviour:
         m_CallState: 2
   audioClip: {fileID: 0}
   triggerText: I have to get out of here!
+  messageDuration: 2
 --- !u!65 &393631352
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2997,7 +2998,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dac36c6a2dfeec44983273ceeae8dbda, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d8d2cfb56fd2ec14696c4d6166d38a19, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -5527,6 +5528,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349895747}
   m_Mesh: {fileID: -1965148586166407090, guid: f21c53d8f70c832459bb7a2c410fa25d, type: 3}
+--- !u!4 &1355449386 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1656798390765736167, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+  m_PrefabInstance: {fileID: 1454038407}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1374238073
 GameObject:
   m_ObjectHideFlags: 0
@@ -6209,6 +6215,22 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 683633097876367094, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: pickUp
+      value: 
+      objectReference: {fileID: 8300000, guid: 823a2bd49f4abf141864ad258d64a5dc, type: 3}
+    - target: {fileID: 683633097876367094, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 683633097876367094, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: OnItemPickUnityEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 683633097876367094, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 683633097876367094, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1113857852}
@@ -6220,6 +6242,34 @@ PrefabInstance:
       propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1151536968}
+    - target: {fileID: 683633097876367094, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 685692557}
+    - target: {fileID: 683633097876367094, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 683633097876367094, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: OpenElevator
+      objectReference: {fileID: 0}
+    - target: {fileID: 683633097876367094, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: OnItemPickUnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 683633097876367094, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: ElevatorDoorManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 683633097876367094, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 683633097876367094, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1061003728658034681, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: OnElevatorStop.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -6228,6 +6278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map_Prefabs
       objectReference: {fileID: 0}
+    - target: {fileID: 2083708562635576873, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: paper
+      value: 
+      objectReference: {fileID: 8300000, guid: 0ed95d211f9db33439f35d5258be837b, type: 3}
     - target: {fileID: 2186112189452355620, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: doorkCreek
       value: 
@@ -6288,10 +6342,14 @@ PrefabInstance:
       propertyPath: ding
       value: 
       objectReference: {fileID: 8300000, guid: f7618ddf148dd384bbeff1080c598c24, type: 3}
+    - target: {fileID: 4612548763359133459, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: paper
+      value: 
+      objectReference: {fileID: 8300000, guid: 0ed95d211f9db33439f35d5258be837b, type: 3}
     - target: {fileID: 4834960111013433029, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 46552889af19a8a4299fde3f83ee9981, type: 3}
+      objectReference: {fileID: 8300000, guid: ae98ca6e7b520744d9c249351c5e93e6, type: 3}
     - target: {fileID: 6020971113451450758, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: ding
       value: 
@@ -6304,6 +6362,10 @@ PrefabInstance:
       propertyPath: ding
       value: 
       objectReference: {fileID: 8300000, guid: f7618ddf148dd384bbeff1080c598c24, type: 3}
+    - target: {fileID: 7277892415820096698, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: pickUp
+      value: 
+      objectReference: {fileID: 8300000, guid: 823a2bd49f4abf141864ad258d64a5dc, type: 3}
     - target: {fileID: 7277892415820096698, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -6344,6 +6406,14 @@ PrefabInstance:
       propertyPath: OnItemInspect.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7278282090738533194, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4944a4613c7e2bd4e9af2a22543d88a2, type: 3}
+    - target: {fileID: 7590585663279049939, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: pickUp
+      value: 
+      objectReference: {fileID: 8300000, guid: 823a2bd49f4abf141864ad258d64a5dc, type: 3}
     - target: {fileID: 7590585663279049939, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: displayText
       value: What is a fuel doing on the floor?
@@ -6360,6 +6430,10 @@ PrefabInstance:
       propertyPath: ding
       value: 
       objectReference: {fileID: 8300000, guid: f7618ddf148dd384bbeff1080c598c24, type: 3}
+    - target: {fileID: 8950421380422041778, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      propertyPath: m_Center.y
+      value: -0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8990996369103540434, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       propertyPath: ding
       value: 
@@ -6373,6 +6447,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6659701748119760181, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
       insertIndex: 4
       addedObject: {fileID: 2021604413}
+    - targetCorrespondingSourceObject: {fileID: 1656798390765736167, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1568566271}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5653ac777a1d2c44b53e7e3266e7740, type: 3}
 --- !u!4 &1454038408 stripped
@@ -6815,6 +6892,134 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562877264}
   m_Mesh: {fileID: -1703917635827724714, guid: 1d1a1181c460c8943a73f91315d3c277, type: 3}
+--- !u!1 &1568566270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1568566271}
+  - component: {fileID: 1568566272}
+  m_Layer: 0
+  m_Name: MonsterSoud
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1568566271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568566270}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1355449386}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1568566272
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568566270}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: aa46ddcfb21dba447b8492b32508309d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1597138695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8721,7 +8926,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

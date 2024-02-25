@@ -17,6 +17,7 @@ public class PortalManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        
         StartCoroutine(ElevatorCoroutine(other));
         //other.transform.rotation = rot;
     }

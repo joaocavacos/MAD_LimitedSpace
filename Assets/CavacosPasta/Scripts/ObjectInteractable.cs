@@ -8,10 +8,13 @@ public class ObjectInteractable : MonoBehaviour, IInteractable
 {
     public string textToDisplay;
 
+    public AudioClip paper;
+
     public UnityEvent OnEndofInteract;
     
     public void Interact()
     {
+        SoundManager.Instance.PlayAudio(paper);
         UIController.Instance.SetDescriptionText(textToDisplay);
         OnEndofInteract?.Invoke();
     }

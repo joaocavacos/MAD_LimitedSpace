@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody rb;
 
+    bool isInElevator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -78,7 +80,7 @@ public class PlayerController : MonoBehaviour
 
     private void PlayFootsteps()
     {
-        if (moveDirection.magnitude > 0 && GameDirector.Instance.canPlay)
+        if (moveDirection.magnitude > 0 && GameDirector.Instance.canPlay && isInElevator ==false)
         {
             steps.enabled = true;
         }

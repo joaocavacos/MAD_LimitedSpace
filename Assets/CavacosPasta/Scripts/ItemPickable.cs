@@ -10,6 +10,8 @@ public class ItemPickable : MonoBehaviour, IInteractable
     public delegate void HandleItemPicked(ItemData data);
     public static event HandleItemPicked OnItemPicked;
 
+    public AudioClip pickUp;
+
     public ItemData itemData;
     public string Name => itemData.itemName;
     public string displayText;
@@ -34,7 +36,8 @@ public class ItemPickable : MonoBehaviour, IInteractable
             Inspect();
             GameDirector.Instance.ChangeGameState(false);
         }
-        
+
+        SoundManager.Instance.PlayAudio(pickUp);
         Destroy(gameObject);
     }
 
