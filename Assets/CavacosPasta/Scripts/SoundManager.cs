@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class SoundManager : Singleton<SoundManager>
 {
-    public AudioSource audioSource;
+    public AudioSource SFXSource;
+    public AudioSource musicSource;
 
     public void PlayAudio(AudioClip clip)
     {
-        audioSource.PlayOneShot(clip);
+        SFXSource.PlayOneShot(clip);
     }
+    
+    public void PlayMusic(AudioClip clip)
+    {
+        musicSource.PlayOneShot(clip);
+    }
+    
 }
