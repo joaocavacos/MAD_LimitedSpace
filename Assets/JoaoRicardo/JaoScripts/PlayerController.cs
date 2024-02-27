@@ -60,8 +60,6 @@ public class PlayerController : MonoBehaviour
         moveDirection = orient.forward * vInput + orient.right * hInput;
 
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
-
-        
     }
 
     private void SpeedControl()
@@ -77,7 +75,6 @@ public class PlayerController : MonoBehaviour
 
     private void PlayFootsteps()
     {
-        print(moveDirection.magnitude > 0 && GameDirector.Instance.canPlay);
         if (moveDirection.magnitude > 0 && GameDirector.Instance.canPlay)
         {
             steps.enabled = true;
