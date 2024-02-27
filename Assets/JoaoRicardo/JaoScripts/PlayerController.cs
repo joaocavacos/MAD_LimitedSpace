@@ -22,9 +22,7 @@ public class PlayerController : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
-
-    bool isInElevator;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -35,11 +33,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PlayFootsteps();
         if (!GameDirector.Instance.canPlay) return;
         
         MyInput();
         SpeedControl();
-        PlayFootsteps();
 
         rb.drag = groundDrag;
     }
@@ -79,7 +77,8 @@ public class PlayerController : MonoBehaviour
 
     private void PlayFootsteps()
     {
-        if (moveDirection.magnitude > 0 && GameDirector.Instance.canPlay && isInElevator ==false)
+        print(moveDirection.magnitude > 0 && GameDirector.Instance.canPlay);
+        if (moveDirection.magnitude > 0 && GameDirector.Instance.canPlay)
         {
             steps.enabled = true;
         }

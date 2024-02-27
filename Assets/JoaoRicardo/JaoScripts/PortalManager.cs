@@ -26,7 +26,7 @@ public class PortalManager : MonoBehaviour
     {
         GameDirector.Instance.ChangeGameState(false);
         elevatorAnim.SetBool("isNear", false);
-        SoundManager.Instance.PlayAudio(elevator);
+        if(elevator != null) SoundManager.Instance.PlayAudio(elevator);
         yield return new WaitForSeconds(2f);
         OnElevatorEnter?.Invoke();
         yield return new WaitForSeconds(0.1f);
