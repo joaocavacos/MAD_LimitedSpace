@@ -5091,7 +5091,6 @@ MonoBehaviour:
   nextFloor: {fileID: 1636397949}
   previousFloor: {fileID: 1383811371}
   elevatorAnim: {fileID: 572242566}
-  elevator: {fileID: 0}
   OnElevatorEnter:
     m_PersistentCalls:
       m_Calls:
@@ -6576,9 +6575,37 @@ PrefabInstance:
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 0.9725491
       objectReference: {fileID: 0}
+    - target: {fileID: 4001632189463088068, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4001632189463088068, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4001632189463088068, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4001632189463088068, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4001632189463088068, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4001632189463088068, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5378274503262040142, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
       propertyPath: m_Name
       value: InspectCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5378274503262040142, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6508599732046117558, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
       propertyPath: m_Pivot.x
@@ -6658,6 +6685,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6508599732046117558, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212152764805904996, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212152764805904996, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212152764805904996, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212152764805904996, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212152764805904996, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212152764805904996, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8879802298356239559, guid: 744d7eb66315e3f439c2adac23fa18bd, type: 3}
@@ -10485,6 +10536,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7537019711641142444, guid: 7d38fb7f473a1b348bc75b8a5c7e6e69, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537019711641142444, guid: 7d38fb7f473a1b348bc75b8a5c7e6e69, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537019711641142444, guid: 7d38fb7f473a1b348bc75b8a5c7e6e69, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537019711641142444, guid: 7d38fb7f473a1b348bc75b8a5c7e6e69, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537019711641142444, guid: 7d38fb7f473a1b348bc75b8a5c7e6e69, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537019711641142444, guid: 7d38fb7f473a1b348bc75b8a5c7e6e69, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8383762502376467192, guid: 7d38fb7f473a1b348bc75b8a5c7e6e69, type: 3}
       propertyPath: m_text
       value: 
@@ -10492,6 +10567,10 @@ PrefabInstance:
     - target: {fileID: 9190648595536057015, guid: 7d38fb7f473a1b348bc75b8a5c7e6e69, type: 3}
       propertyPath: m_Name
       value: UICanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190648595536057015, guid: 7d38fb7f473a1b348bc75b8a5c7e6e69, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13476,7 +13555,6 @@ MonoBehaviour:
   nextFloor: {fileID: 1636397949}
   previousFloor: {fileID: 450626612708828024}
   elevatorAnim: {fileID: 2982457733034771723}
-  elevator: {fileID: 0}
   OnElevatorEnter:
     m_PersistentCalls:
       m_Calls:
@@ -18166,7 +18244,6 @@ MonoBehaviour:
   nextFloor: {fileID: 163983705474760110}
   previousFloor: {fileID: 22468924993346977}
   elevatorAnim: {fileID: 4711928065536482485}
-  elevator: {fileID: 0}
   OnElevatorEnter:
     m_PersistentCalls:
       m_Calls:
@@ -31891,7 +31968,6 @@ MonoBehaviour:
   nextFloor: {fileID: 6341848876219505119}
   previousFloor: {fileID: 8716110748836186100}
   elevatorAnim: {fileID: 3917821985879275400}
-  elevator: {fileID: 0}
   OnElevatorEnter:
     m_PersistentCalls:
       m_Calls:
@@ -36473,7 +36549,6 @@ MonoBehaviour:
   nextFloor: {fileID: 4512527791969483924}
   previousFloor: {fileID: 998638318696124375}
   elevatorAnim: {fileID: 5278662546436158805}
-  elevator: {fileID: 0}
   OnElevatorEnter:
     m_PersistentCalls:
       m_Calls:
@@ -51123,7 +51198,6 @@ MonoBehaviour:
   nextFloor: {fileID: 3884644519861952421}
   previousFloor: {fileID: 6745918605109501157}
   elevatorAnim: {fileID: 3511514657406685810}
-  elevator: {fileID: 0}
   OnElevatorEnter:
     m_PersistentCalls:
       m_Calls:
