@@ -14,8 +14,9 @@ public class ObjectInteractable : MonoBehaviour, IInteractable
     
     public void Interact()
     {
+        UIController.Instance.ClearText();
         SoundManager.Instance.PlayAudio(paper);
-        UIController.Instance.SetDescriptionText(textToDisplay);
+        UIController.Instance.SetDescriptionText(textToDisplay, 2f);
         OnEndofInteract?.Invoke();
     }
     

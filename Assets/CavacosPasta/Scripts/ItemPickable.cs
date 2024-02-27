@@ -25,6 +25,7 @@ public class ItemPickable : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        UIController.Instance.ClearText();
         UIController.Instance.SetNameText(Name, 5f);
         UIController.Instance.SetDescriptionText(displayText, 5f);
         UIController.Instance.ChangeCrosshair("Open", false);

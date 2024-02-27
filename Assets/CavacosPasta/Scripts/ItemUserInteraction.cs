@@ -13,15 +13,16 @@ public class ItemUserInteraction : MonoBehaviour, IInteractable
     
     public void Interact()
     {
+        UIController.Instance.ClearText();
         if (Inventory.Instance.HasItemByData(neededItem))
         {
             SoundManager.Instance.PlayAudio(fuse);
-            UIController.Instance.SetDescriptionText(UnlockMessage);
+            UIController.Instance.SetDescriptionText(UnlockMessage, 2f);
             OnItemUnlock?.Invoke();
         }
         else
         {
-            UIController.Instance.SetDescriptionText(LockedMessage);
+            UIController.Instance.SetDescriptionText(LockedMessage, 2f);
         }
     }
 }
