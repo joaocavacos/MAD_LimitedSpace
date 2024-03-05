@@ -5480,7 +5480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: Everything is in good shape.
-  paper: {fileID: 0}
+  interactSound: {fileID: 0}
   OnEndofInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -13373,7 +13373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5346297072706072745, guid: 9bf08d9e1d1204640b02f860bf604bad, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 34.6
+      value: -5.62
       objectReference: {fileID: 0}
     - target: {fileID: 5346297072706072745, guid: 9bf08d9e1d1204640b02f860bf604bad, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15535,24 +15535,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 535156964615499228}
   m_Mesh: {fileID: -1703917635827724714, guid: 1d1a1181c460c8943a73f91315d3c277, type: 3}
---- !u!1 &474977710108539887
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8740198985079046577}
-  - component: {fileID: 3490565621696979447}
-  - component: {fileID: 2186112190835021219}
-  m_Layer: 0
-  m_Name: DoorOpenTrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!23 &479182165283208744
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16684,18 +16666,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 3490672676564080083}
-        m_TargetAssemblyTypeName: ElevatorDoorManager, Assembly-CSharp
-        m_MethodName: OpenElevator
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18799,7 +18769,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6813329738622800127}
   - {fileID: 6857896197224935357}
   - {fileID: 8388297877918164427}
   m_Father: {fileID: 8964795363065675922}
@@ -22787,7 +22756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: What is the meaning of this?
-  paper: {fileID: 8300000, guid: 0ed95d211f9db33439f35d5258be837b, type: 3}
+  interactSound: {fileID: 0}
   OnEndofInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -23512,20 +23481,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2186112190835021219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474977710108539887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b38a6c0151fb5545b1a26062fc8f529, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorAnim: {fileID: 2605870773803445869}
-  doorkCreek: {fileID: 8300000, guid: 202a3fdfc6587ae45a5804d2d9f40092, type: 3}
 --- !u!4 &2188351958758566301
 Transform:
   m_ObjectHideFlags: 0
@@ -24227,8 +24182,8 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 11.29
-  m_SpotAngle: 49
-  m_InnerSpotAngle: 21.80208
+  m_SpotAngle: 125.21344
+  m_InnerSpotAngle: 98.015526
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -24475,7 +24430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: The fuse box is empty.
-  paper: {fileID: 0}
+  interactSound: {fileID: 0}
   OnEndofInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -27420,6 +27375,8 @@ GameObject:
   - component: {fileID: 4936076592611132433}
   - component: {fileID: 5906003366689929382}
   - component: {fileID: 6341628113738174803}
+  - component: {fileID: 6341628113738174804}
+  - component: {fileID: 6341628113738174805}
   m_Layer: 0
   m_Name: door
   m_TagString: Untagged
@@ -29599,7 +29556,7 @@ GameObject:
   - component: {fileID: 8950421379123305781}
   - component: {fileID: 7277892416531446077}
   m_Layer: 0
-  m_Name: 205
+  m_Name: plate205_interaction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29621,14 +29578,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3011042168118038534}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.70710677, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: 0.47607362, z: -0, w: 0.8794054}
   m_LocalPosition: {x: -0.12875603, y: 1.0811515, z: -0.513371}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2364886734404441169}
   m_Father: {fileID: 1530134792458135668}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 56.859, z: 0}
 --- !u!23 &3443009293386250994
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29877,27 +29834,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &3490565621696979447
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474977710108539887}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.75, y: 3, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3490672676564080083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30519,7 +30455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: Everything is working well...
-  paper: {fileID: 0}
+  interactSound: {fileID: 0}
   OnEndofInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -31265,14 +31201,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3486115168973767350}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.020338086, y: 0.36246258, z: 0.011826596, w: 0.93170136}
-  m_LocalPosition: {x: -4.545, y: 0.057, z: 2.253}
+  m_LocalRotation: {x: 0.0065000323, y: -0.38282675, z: 0.022610014, w: 0.92352057}
+  m_LocalPosition: {x: 0.006, y: 0.057, z: -3.643}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7364310663959963494}
   m_Father: {fileID: 6659701749350346930}
-  m_LocalEulerAnglesHint: {x: 1.68, y: 42.546, z: 2.109}
+  m_LocalEulerAnglesHint: {x: 1.68, y: -45, z: 2.109}
 --- !u!33 &3807126712182889378
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -35831,7 +35767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: Someone left a note on the door.
-  paper: {fileID: 8300000, guid: 0ed95d211f9db33439f35d5258be837b, type: 3}
+  interactSound: {fileID: 0}
   OnEndofInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -41456,7 +41392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: The box is full of fuses and everything is working well...
-  paper: {fileID: 0}
+  interactSound: {fileID: 0}
   OnEndofInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -43153,6 +43089,61 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5779197439840542771, guid: d303e107c95b8a64ca4798361c5af182, type: 3}
+--- !u!114 &6341628113738174804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011042168118038534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b38a6c0151fb5545b1a26062fc8f529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorAnim: {fileID: 2605870773803445869}
+  doorCreek: {fileID: 8300000, guid: 202a3fdfc6587ae45a5804d2d9f40092, type: 3}
+--- !u!114 &6341628113738174805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011042168118038534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d2b75486b2fb564b92a485334647a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textToDisplay: 
+  interactSound: {fileID: 0}
+  OnEndofInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6341628113738174804}
+        m_TargetAssemblyTypeName: DoorManager, Assembly-CSharp
+        m_MethodName: OpenDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6341628113738174805}
+        m_TargetAssemblyTypeName: ObjectInteractable, Assembly-CSharp
+        m_MethodName: DestroyInteraction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &6341848876219505119
 Transform:
   m_ObjectHideFlags: 0
@@ -44545,8 +44536,8 @@ Transform:
   - {fileID: 8964795363065675922}
   - {fileID: 4916853558701218562}
   - {fileID: 3800993984755244025}
+  - {fileID: 6813329738622800127}
   - {fileID: 6441592722345967322}
-  - {fileID: 8740198985079046577}
   m_Father: {fileID: 4198619958398561270}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6661446454669061853
@@ -45093,12 +45084,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3437691328834721715}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.13555592, y: -0.137217, z: 0.6952597, w: 0.6923945}
-  m_LocalPosition: {x: 0.726, y: 0.008, z: 6.39}
+  m_LocalRotation: {x: -0.6952601, y: -0.6923949, z: -0.13555387, w: -0.13721496}
+  m_LocalPosition: {x: -4.4129987, y: 0.032, z: 2.0000339}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1146223715214840971}
+  m_Father: {fileID: 6659701749350346930}
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!4 &6824883938154535031
 Transform:
@@ -46669,10 +46660,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 474977710108539887}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3490672676564080083}
+        m_TargetAssemblyTypeName: ElevatorDoorManager, Assembly-CSharp
+        m_MethodName: OpenElevator
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -53465,21 +53468,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!4 &8740198985079046577
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474977710108539887}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.387, y: 0.862, z: 1.671}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6659701749350346930}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8747146139067794807
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -54431,8 +54419,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0.0057708505, y: -0.25, z: -0.00000047656573}
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &8950823032482215839
 Transform:
   m_ObjectHideFlags: 0
@@ -55236,7 +55224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: The fuse box is empty.
-  paper: {fileID: 0}
+  interactSound: {fileID: 0}
   OnEndofInteract:
     m_PersistentCalls:
       m_Calls: []
