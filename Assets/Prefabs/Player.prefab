@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 7034549892587240507}
   - component: {fileID: 7588238841536647243}
   - component: {fileID: 3490308841463545399}
+  - component: {fileID: 8938071349563657584}
   - component: {fileID: 6624979902792775442}
   m_Layer: 0
   m_Name: Main Camera
@@ -220,6 +221,21 @@ MonoBehaviour:
   orientation: {fileID: 5709851423801973107}
   cameraZoomSpeed: 2500
   minZoomAmount: 30
+--- !u!114 &8938071349563657584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946357167942058242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4236b33a567f8c64e8e18db42acbeb1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkingBobbingSpeed: 14
+  bobbingAmount: 0.05
+  controller: {fileID: 6839767152740140784}
 --- !u!114 &6624979902792775442
 MonoBehaviour:
   m_ObjectHideFlags: 0
