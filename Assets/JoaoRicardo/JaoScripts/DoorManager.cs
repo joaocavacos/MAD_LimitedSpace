@@ -5,17 +5,18 @@ using UnityEngine;
 public class DoorManager : MonoBehaviour
 {
     public Animator doorAnim;
-    public AudioClip doorkCreek;
-
-    private void OnTriggerEnter(Collider other)
+    public AudioClip doorCreek;
+    private bool _canOpen = true;
+    
+    public void OpenDoor()
     {
+        if (!_canOpen) return;
         doorAnim.SetBool("shouldOpen", true);
-        SoundManager.Instance.PlayAudio(doorkCreek);
+        SoundManager.Instance.PlayAudio(doorCreek);
+        _canOpen = false;
     }
+    
+    
 
-    private void OnTriggerExit(Collider other)
-    {
-        doorAnim.SetBool("shouldOpen", false);
-    }
 
 }

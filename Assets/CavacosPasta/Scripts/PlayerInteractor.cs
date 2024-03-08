@@ -7,30 +7,39 @@ public class PlayerInteractor : MonoBehaviour
 {
     private IInteractable _interactable;
     
+    public float rayDistance;
+    private Camera _camera;
+
+    private void Start()
+    {
+        _camera = Camera.main;
+    }
+
     private void Update()
     {
-        if (_interactable != null)
+        var interactionRay = _camera.ViewportPointToRay(new Vector3 (0.5f, 0.5f, 0));
+        
+        Debug.DrawRay(interactionRay.origin, interactionRay.direction * rayDistance);
+
+        if (Physics.Raycast(interactionRay.origin, interactionRay.direction * rayDistance, out var hit, rayDistance))
         {
-            if (Input.GetKeyDown(KeyCode.E) && GameDirector.Instance.canPlay)
+            if (hit.collider.TryGetComponent(out IInteractable newInteractable))
             {
-                _interactable.Interact();
+                //print("Raycast hit: " + hit.collider.name);
+                _interactable = newInteractable;
+                UIController.Instance.ChangeCrosshair("Open", true);
             }
         }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.TryGetComponent(out IInteractable newInteractable))
+        else
         {
-            _interactable = newInteractable;
-            UIController.Instance.ChangeCrosshair("Open", true);
+            _interactable = null;
+            UIController.Instance.ChangeCrosshair("Open", false);
+        }
+
+        if (_interactable != null && Input.GetKeyDown(KeyCode.E) && GameDirector.Instance.canPlay)
+        {
+            _interactable.Interact();
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        _interactable = null;
-        UIController.Instance.ChangeCrosshair("Open", false);
-        UIController.Instance.ClearText();
-    }
 }

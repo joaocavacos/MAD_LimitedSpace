@@ -5,7 +5,6 @@ using UnityEngine.Events;
 
 public class ObjectActivator : MonoBehaviour
 {
-    private bool hasActivated = false;
     public List<ItemData> neededItems;
     private int itemsListSize;
         
@@ -36,7 +35,6 @@ public class ObjectActivator : MonoBehaviour
         
         if (sizeCount < itemsListSize) return;
         
-        hasActivated = true;
         OnActivateObject?.Invoke();
     }
 

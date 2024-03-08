@@ -25,6 +25,7 @@ public class ItemPickable : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        UIController.Instance.ClearText();
         UIController.Instance.SetNameText(Name, 5f);
         UIController.Instance.SetDescriptionText(displayText, 5f);
         UIController.Instance.ChangeCrosshair("Open", false);
@@ -45,6 +46,7 @@ public class ItemPickable : MonoBehaviour, IInteractable
     {
         OnItemInspect?.Invoke();
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         itemGO = Instantiate(itemPrefab, inspectCamPos, Quaternion.identity);
         ObjectInspector.Instance.SetGameObjectInspect(itemGO);
     }

@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -23,9 +22,7 @@ public class PlayerController : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
-
-    bool isInElevator;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -36,11 +33,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PlayFootsteps();
         if (!GameDirector.Instance.canPlay) return;
         
         MyInput();
         SpeedControl();
-        PlayFootsteps();
 
         rb.drag = groundDrag;
     }
@@ -63,8 +60,6 @@ public class PlayerController : MonoBehaviour
         moveDirection = orient.forward * vInput + orient.right * hInput;
 
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
-
-        
     }
 
     private void SpeedControl()
@@ -80,13 +75,11 @@ public class PlayerController : MonoBehaviour
 
     private void PlayFootsteps()
     {
-        if (moveDirection.magnitude > 0 && GameDirector.Instance.canPlay && isInElevator ==false)
-        {
-            steps.enabled = true;
-        }
-        else
-        {
-            steps.enabled = false;
-        }
+        steps.enabled = GetMovement();
+    }
+
+    public bool GetMovement()
+    {
+        return moveDirection.magnitude > 0 && GameDirector.Instance.canPlay;
     }
 }
